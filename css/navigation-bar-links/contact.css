@@ -1,0 +1,216 @@
+header {
+  position: sticky;
+  top: 0;
+  background-color: #08878b;
+  padding: 10px 0;
+  z-index: 100;
+}
+
+body, h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navigation-bar li {
+  margin-right: 20px;
+}
+
+.navigation-bar a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 15px;
+  display: inline-block;
+}
+
+.navigation-bar a:hover {
+  background-color: lightgray;
+  border-radius: 5px;
+}
+
+.navigation-bar {
+  display: flex;
+  justify-content: right;
+}
+
+/* cards */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Business Card Style */
+.card-container {
+  width: 100%; /* Adjust based on your layout */
+  max-width: 800px; /* Maximum width */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 16px;
+  padding: 16px;
+  background-color: #fff;
+  display: flex; /* Add this line for horizontal layout */
+  align-items: center; /* Vertically center the contents */
+}
+
+/* fonts */
+
+.card-container h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.card-container h5 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.card-container p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.card-container a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #007BFF; /* Change to your preferred link color */
+  text-decoration: none; /* Removes underline */
+}
+
+/* Logo Section */
+.logo-image-container {
+  flex: 1; /* Takes 1 fraction of the available space */
+  text-align: center;
+  position: relative;
+  align-self: flex-start;
+}
+
+.logo-name-container img {
+  width: 100px;  /* Adjust the width */
+  height: 100px;  /* Adjust the height */
+  border-radius: 50%;  /* Rounded corners */
+  margin-bottom: 12px;  /* Add some space below the image */
+}
+
+.logo-image-container p {
+  margin-top: 8px;
+}
+
+.logo-image-container p::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: black;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* Name Section */
+.logo-name-container {
+  flex: 2; /* Takes 2 fractions of the available space */
+  text-align: center;
+}
+
+.logo-name-container img {
+  width: 100px;
+  height: auto;
+}
+
+/* Contact Section */
+.logo-contact-container {
+  flex: 1; /* Takes 1 fraction of the available space */
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  align-self: flex-end;
+}
+
+.logo-contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo-contact img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* footer */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.footer-section {
+  display: inline;
+  flex: 1;
+}
+
+.footer-section h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section p {
+  margin-bottom: 5px;
+}
+
+.footer-section .social-icons {
+  display: flex;
+}
+
+.footer-section .social-icons img {
+  padding-right: 15px;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-section ul li a,
+.footer-section p {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid #444;
+}
