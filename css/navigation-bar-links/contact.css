@@ -53,10 +53,12 @@ header {
 
 .business-container {
     display: grid;
-    grid-template-columns: 2fr 3fr 2fr;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    grid-template-columns: repeat(9, 50px); 
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
-    margin: 80px 20px;
+    justify-content: space-around;
 }
 
 .card-container1 {
@@ -66,8 +68,8 @@ header {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     grid-row-start: 1;
     grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 7;
     display: flex;
     justify-content: space-between;
 }
@@ -79,8 +81,8 @@ header {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     grid-row-start: 2;
     grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 7;
     display: flex;
     justify-content: space-between;
 }
@@ -92,8 +94,8 @@ header {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     grid-row-start: 3;
     grid-row-end: 4;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 7;
     display: flex;
     justify-content: space-between;
 }
@@ -103,8 +105,8 @@ header {
 .logo-image-container {
     text-align: center;
     position: relative;
-    margin: 10px;
-    margin-bottom: 0;
+    margin-top: 10px;
+    margin-left: 10px;
     display: grid;
     justify-content: space-between;
 }
@@ -130,7 +132,6 @@ header {
 
 .logo-name-container {
     text-align: center;
-    margin: 15px;
     display: grid;
     justify-content: space-around;
 }
@@ -192,19 +193,42 @@ footer {
 @media (max-width: 768px) {
 
     .business-container {
-        grid-template-columns: 1fr 3fr 1fr;
+        display: grid;
+        grid-template-columns: repeat(9, 50px); 
+        grid-template-rows: 1fr 1fr 1fr;
     }
 
     .logo-name-container img {
-        width: 125px;
-        height: 125px;
+        width: 105px;
+        height: 105px;
         border-radius: 50%;
         margin-bottom: 12px;
     }
 
     .logo-image-container img {
-        height: 180px;
-        width: 180px;
+        height: 140px;
+        width: 140px;
+    }
+
+    /* card container 1 */
+
+    .card-container1 {
+        grid-column-start: 2;
+        grid-column-end: 9;
+    }
+
+    /* card container 2 */
+
+    .card-container2 {
+        grid-column-start: 2;
+        grid-column-end: 9;
+    }
+
+    /* card container 3 */
+
+    .card-container3 {
+        grid-column-start: 2;
+        grid-column-end: 9;
     }
 
 }
