@@ -167,6 +167,7 @@ footer {
     
     .album {
         grid-template-columns: repeat(3, auto);
+        gap: 5px;
     }
 
     .photo {
