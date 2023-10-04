@@ -194,7 +194,7 @@ footer {
 
     .business-container {
         display: grid;
-        grid-template-columns: repeat(9, 50px); 
+        grid-template-columns: repeat(16, 40px); 
         grid-template-rows: 1fr 1fr 1fr;
     }
 
@@ -213,22 +213,22 @@ footer {
     /* card container 1 */
 
     .card-container1 {
-        grid-column-start: 2;
-        grid-column-end: 9;
+        grid-column-start: 5;
+        grid-column-end: 13;
     }
 
     /* card container 2 */
 
     .card-container2 {
-        grid-column-start: 2;
-        grid-column-end: 9;
+        grid-column-start: 5;
+        grid-column-end: 13;
     }
 
     /* card container 3 */
 
     .card-container3 {
-        grid-column-start: 2;
-        grid-column-end: 9;
+        grid-column-start: 5;
+        grid-column-end: 13;
     }
 
 }
