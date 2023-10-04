@@ -192,6 +192,10 @@ footer {
 
 @media (max-width: 768px) {
 
+    .navigation-bar li {
+        margin-right: 10px;
+    }
+
     .business-container {
         display: grid;
         grid-template-columns: repeat(16, 40px); 
