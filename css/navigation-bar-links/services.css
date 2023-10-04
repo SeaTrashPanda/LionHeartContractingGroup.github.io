@@ -332,15 +332,25 @@ footer {
 
 @media (max-width: 768px) {
 
+    .navigation-bar li {
+        margin-right: 10px;
+    }
+
     .service-descriptions {
         display: grid;
         grid-template-columns: -1fr 6fr -1fr;
-        grid-template-rows: repeat(11, 430px);
+        grid-template-rows: repeat(11, auto);
+    }
+
+    .information-container {
+        display: grid;
+        grid-template-areas: "information-container-image"
+                             "information-container-text";
     }
 
     .information-container-image {
-        height: 88%;
-        width: 95%;
+        height: 100%;
+        width: 100%;
     }
 
     .decks {
