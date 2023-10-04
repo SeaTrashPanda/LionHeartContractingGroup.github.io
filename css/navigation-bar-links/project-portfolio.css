@@ -322,11 +322,12 @@ footer {
 
     .grid {
         grid-template-columns: 1fr 6fr 1fr;
-        grid-template-rows: repeat(11, 250px);
+        grid-template-rows: repeat(11, auto);
     }
 
-    .information-container-image {
-        display: none;
+    .information-container {
+        display: grid;
+
     }
 
     .album {
