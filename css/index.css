@@ -348,6 +348,10 @@ footer {
 
     /* navigation bar */
 
+    .navigation-bar li {
+        margin-right: 10px;
+    }
+    
     /* banner */
 
     /* contact banner */
@@ -404,8 +408,8 @@ footer {
     }
 
     .photo {
-        width: 145px;
-        height: 145px;
+        width: 135px;
+        height: 135px;
     }
 
     /* footer */
