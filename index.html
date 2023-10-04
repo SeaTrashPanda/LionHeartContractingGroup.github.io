@@ -1,247 +1,412 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lionheart Contracting Group</title>
-        <link rel="stylesheet" href="./css/index.css">
-    </head>
-    <body>
-        <div class="grid">
+body,
+header,
+main,
+footer, h4 {
+    margin: 0;
+    padding: 0;
+}
 
-            <!--hamburger for smaller screens-->
+/* hide the hamburger button */
 
-            <div class="header">
-                <header>
-                    <!--<div class="hamheader">
-                        <button class="hamburger">&#9776;</button>
-                        <nav class="hamburger-navigation bar">
-                            <ul>
-                                <li><a href="./index.html">About Us</a></li>
-                                <li><a href="./Navigation-Bar-Links/services.html">Services</a></li>
-                                <li><a href="./Navigation-Bar-Links/contact.html">Contact</a></li>
-                                <li><a href="./Navigation-Bar-Links/gallery.html">Project Portfolio</a></li>
-                            </ul>
-                        </nav>
-                    </div>-->
+.navigation-bar {
+    display: block;
+}
 
-            <!-- regular navigation for larger screens-->
+.hamheader {
+    display: none;
+}
 
-                    <nav class="navigation-bar">
-                        <ul>
-                        <!--<li><a href="./index.html">Home</a></li>-->
-                            <li><a href="./index.html">About Us</a></li>
-                            <li><a href="./Navigation-Bar-Links/services.html">Services</a></li>
-                            <li><a href="./Navigation-Bar-Links/contact.html">Contact</a></li>
-                            <li><a href="./Navigation-Bar-Links/gallery.html">Project Portfolio</a></li>
-                        <!--<li><a href="">Estimate Calculator</a></li>-->
-                        </ul>
-                    </nav>
-                </header>
-            </div>
+.hamburger-navigation-bar {
+    display: none;
+    width: 100%;
+    text-align: right;
+}
 
-            <!--Banner-->
-
-            <div  class="banner">
-                <div class="banner-background">
-                    <h1>Lionheart Contracting Group</h1>
-                </div>
-            </div>
-
-            <div class="contact-banner">
-                <p>Call <strong>Lionheart Contracting Group</strong> at: <a href="tel:+17571234567">+1 (757) 647-2842</a></p>
-            </div>
-
-            <!--What we offer-->
-
-            <div class="daily-plan">
-                <div class="section-title">
-                    <h2>What We Do on a Daily Basis</h2>
-                </div>
-                <div class="daily-intro">
-                    <p>When it comes to bringing your vision to life, you need a trusted partner who understands the intricacies of construction and delivers on every promise.</p>
-                    <p>Here's what we offer as your dedicated general contractor:</p>
-                </div>
-                <div class="daily-list">
-                    <ul>
-                        <li>From the initial consultation to the final walk-through, we'll handle every aspect of your project. This ensures consistency, quality, and that every detail aligns with your vision.</li>
-                        <li>We respect your budget and time. Our team provides accurate estimations, and we employ efficient practices to ensure the project stays on track and within the set financial parameters.</li>
-                        <li>We take pride in our craftsmanship. Our rigorous quality checks ensure every element of the project meets or exceeds industry standards.</li>
-                        <li>Every project is unique, and so are your requirements. We provide tailored solutions that align perfectly with your vision and the functional needs of the space.</li>
-                        <li>Our team prioritizes safety above all. From adhering to industry-standard safety protocols to ensuring that our job sites are secure, we ensure peace of mind for you and our team.</li>
-                    </ul>
-                </div>
-                <div class="daily-outro">
-                    <p>When you choose <strong>Lionheart Contracting Group</strong>, you're not just getting a contractor; you're gaining a dedicated partner committed to turning your dream space into reality. Let's embark on this transformative journey together!</p>
-                </div>
-            </div>
-
-            <!--who we are-->
-
-            <div class="who-we-are">
-                <div class="section-title">
-                    <h2>Who We Are</h2>
-                </div>
-                <div class="who-we-are-banner-container">
-                    <div class="who-we-are-banner">
-                        <div class="who-we-are-banner-photo-container">
-                            <div class="who-we-are-banner-photo">
-                                <p>100% employee and veteran owned</p>
-                            </div>
-                        </div>
-                        <div class="who-we-are-banner-paragraph-container">
-                            <div class="who-we-are-banner-paragraph">
-                                <p>At <strong>Lionheart Contracting Group</strong> we take immense pride in being a 100% employee and veteran-owned business. Our team embodies the core values of integrity, dedication, and excellence. We understand the value of teamwork and meticulous planning, virtues that enable us to deliver services that meet and exceed your expectations. From home renovations to specialized contracting services, we are equipped to handle projects of any scale with the utmost professionalism. Choosing Lionheart Contracting Group means choosing a partner dedicated to exceptional service, crafted through years of experience and refined through the principles of duty, honor, and excellence.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
 
 
-            <!--Meet our team-->
-            
-            <div class="meet-our-team">
-                <div class="section-title">
-                    <h2>Meet our team</h2>
-                </div>
-                <div class="roster">
-                    <div class="employee">
-                        <div class="employee-name">
-                            <h4>Scott</h4>
-                        </div>
-                        <div class="portrait-container">
-                            <div class="portrait">
-                                <img src="./images/headshots/scot-portrait.jpeg" alt="">
-                            </div>
-                            <div class="qualifications">
-                                <ul>
-                                    <li>General Contractor Certified</li>
-                                    <li>OSHA Certified</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="individual-quote">
-                            <p>" quote "</p>
-                        </div>
-                    </div>
-            
-                    <div class="employee">
-                        <div class="employee-name">
-                            <h4>Leo</h4>
-                        </div>
-                        <div class="portrait-container">
-                            <div class="portrait">
-                                <img src="./images/headshots/leo-portrait.jpeg" alt="">
-                            </div>
-                            <div class="qualifications">
-                                <ul>
-                                    <li>Navy veteran</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="individual-quote">
-                            <p>" quote "</p>
-                        </div>
-                    </div>
-            
-                    <div class="employee3">
-                        <div class="employee-name">
-                            <h4>Zeke</h4>
-                        </div>
-                        <div class="portrait-container">
-                            <div class="portrait">
-                                <img src="./images/headshots/zeke-portrait.jpeg" alt="">
-                            </div>
-                            <div class="qualifications">
-                                <ul>
-                                    <li>Logistics Specialist</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="individual-quote">
-                            <p>" quote "</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!--Picture section-->
-    
-            <div class="section-title">
-                <h2>What we've done</h2>
-            </div>
 
-            <div class="work">
-                <div class="album">
-                    <div class="photo">
-                        <img src="./images/project-portfolios/cabinets/cabinets.jpeg" alt="cabinets">
-                    </div>
-                    <div class="photo">
-                        <img src="./images/project-portfolios/decks/backporch.jpeg" alt="back deck">
-                    </div>
-                    <div class="photo">
-                        <img src="./images/project-portfolios/floors/floors-final.jpg" alt="flooring">
-                    </div>
-                    <div class="photo">
-                        <img src="./images/project-portfolios/siding/siding.jpg" alt="house siding">
-                    </div>
-                    <div class="photo">
-                        <img src="./images/project-portfolios/tiling/tiling.jpg" alt="bathroom tile">
-                    </div>
-                    <div class="photo">
-                        <img src="./images/project-portfolios/windows/window.jpg" alt="window">
-                    </div>
-                    <div class="photo">
-                        <img src="./images/project-portfolios/Framing/framing.jpg" alt="framing">
-                    </div>
-                    <div class="photo">
-                        <img src="./images/project-portfolios/drywall/drywall.jpg" alt="drywall">
-                    </div>
-                    <div class="photo">
-                        <img src="./images/project-portfolios/electrical/electrical.jpg" alt="electrical work">
-                    </div>
-                    <div class="photo">
-                        <img src="./images/project-portfolios/plumming/plumming.jpg" alt="plumming work">
-                    </div>
+/* navigation bar */
 
-                    <!-- Add more photos here -->
-                </div>
-            </div>
-            <div class="gallery-link">
-                <a href="./Navigation-Bar-Links/gallery.html">Project Portfolio</a>
-            </div>
+header {
+    position: sticky;
+    background-color: #08878b;
+    padding: 10px 0;
+    top: 0;
+    z-index: 100;
+}
 
-        <footer>
-            <div class="footer-container">
-                <div class="footer-section">
-                    <h5>Quick Links</h5>
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./Navigation-Bar-Links/services.html">Services</a></li>
-                        <li><a href="./Navigation-Bar-Links/contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h5>Contact Us</h5>
-                    <p>Email: lionheartcontractinggroup@gmail.com</p>
-                    <p>Phone: +1 (757) 647-2842</p>
-                </div>
-                <div class="footer-section">
-                    <h5>Follow Us</h5>
-                    <ul class="social-icons">
-                        <li><a href="https://www.facebook.com/profile.php?id=61551120681245" target="_blank"><img src="./images/social media icons/facebook.png" alt="Facebook"></a></li>
-                        <li><a href="#"><img src="./images/social media icons/instagram.png" alt="Instagram"></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                &copy; 2023 Lionheart Contracting Group. All rights reserved.
-            </div>
-        </footer>
-        </div>
+.header {
+    grid-area: header;
+}
 
-        <script src="./Scripts/index.js"></script>
+.navigation-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
 
-    </body>
-</html>
+.navigation-bar li {
+    margin-right: 20px;
+}
+
+.navigation-bar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+    display: inline-block;
+}
+
+.navigation-bar a:hover {
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.navigation-bar {
+    display: grid;
+    justify-content: right;
+}
+
+/* fonts and text */
+
+.section-title {
+    display: grid;
+    justify-items: center;
+}
+
+/* banner */
+
+.banner {
+    grid-area: banner;
+}
+
+.banner-background {
+    position: relative;
+    height: 725px;
+    padding: 0 25%;
+    background: url("../images/background-image/background-image.jpeg") center center no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.banner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 74px;
+    color: white;
+    z-index: 2;
+}
+  
+.banner-background:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+/* contact banner */
+
+.contact-banner {
+    grid-area: contact-banner;
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.contact-banner a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+  }
+
+/* daily-plan */
+
+.daily-plan {
+    grid-area: daily-plan;
+}
+
+.daily-intro p {
+    padding: 16px;
+}
+
+.daily-list li {
+    line-height: 2;
+}
+
+.daily-outro p {
+    padding: 16px;
+}
+
+/* who we are */
+
+.who-we-are {
+    grid-area: who-we-are;
+}
+
+.who-we-are-banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* meet our team */
+
+.meet-our-team {
+    grid-area: meet-our-team;
+}
+
+.roster {
+    display: grid;
+    grid: 430px / 1fr 1fr 1fr; 
+    row-gap: 10px;
+    justify-items: center;
+}
+
+.employee1 {
+    height: 360px;
+    width: 500px;
+    border-radius: 8px;
+    background-color: #08878b54;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.39);
+    display: grid;
+    grid-template-areas: "employee-name"
+                         "portrait-container"
+                         "individual-quote";
+    grid-template-rows: 35px 250px 75px;
+    justify-content: center;
+}
+
+.employee2 {
+    height: 360px;
+    width: 500px;
+    border-radius: 8px;
+    background-color: #08878b54;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.39);
+    display: grid;
+    grid-template-areas: "employee-name"
+                         "portrait-container"
+                         "individual-quote";
+    grid-template-rows: 35px 250px 75px;
+    justify-content: center;
+}
+
+.employee3 {
+    height: 360px;
+    width: 500px;
+    border-radius: 8px;
+    background-color: #08878b54;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.39);
+    display: grid;
+    grid-template-areas: "employee-name"
+                         "portrait-container"
+                         "individual-quote";
+    grid-template-rows: 35px 250px 75px;
+    justify-content: center;
+}
+
+.employee-name {
+    grid-area: employee-name;
+    height: 35px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #08878b;
+}
+
+.employee-name h4 {
+    height: 100%;
+    margin-left: 15px;
+    display: grid;
+    align-items: center;
+}
+
+.portrait-container {
+    grid-area: portrait-container;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.portrait {
+    height: 250px;
+    width: 250px;
+}
+
+.portrait img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+  
+.qualifications {
+    background-color: white;
+    height: 250px;
+    width: 100%;
+}
+  
+.individual-quote {
+    grid-area: individual-quote;
+    text-align: center;
+}
+
+.individual-quote p {
+    font-style: italic;
+}
+
+/* picture section */
+
+.work {
+    grid-area: work;
+    display: grid;
+    justify-items: center;
+}
+
+.album {
+    display: grid;
+    grid-template-rows: 350px 350px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.photo {
+    width: 350px;
+    height: 350px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.photo img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* gallery link */
+
+.gallery-link {
+    grid-area: gallery-link;
+    background-color: #f1f1f1;
+    height: 50px;
+}
+
+.gallery-link a {
+    display: grid;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+/* footer */
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section .social-icons {
+    display: flex;
+}
+  
+.footer-section .social-icons img {
+    padding-right: 15px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+
+    /* navigation bar */
+
+    /* banner */
+
+    /* contact banner */
+
+    /* what we offer */
+
+    /* who we are */
+
+    /* meet our team */
+
+    .roster {
+        grid: auto auto auto / auto;
+    }
+
+    .employee1 {
+        height: 300px;
+        width: 360px;
+        grid-template-rows: 35px 200px 75px;
+        grid-column: span 2;
+        justify-self: center;
+    }
+
+    .employee2 {
+        height: 300px;
+        width: 360px;
+        grid-template-rows: 35px 200px 75px;
+        grid-column: span 2;
+        justify-self: center;
+    }
+
+    .employee3 {
+        height: 300px;
+        width: 360px;
+        grid-template-rows: 35px 200px 75px;
+        grid-column: span 2;
+        justify-self: center;
+    }
+
+    .portrait {
+        height: 200px;
+        width: 200px;
+    }
+
+    .qualifications {
+        height: 200px;
+    }
+
+    /* picture section */
+
+    .album {
+        grid-template-rows: 150px 150px;
+        grid-template-columns: repeat(3, 139px);
+        row-gap: 10px;
+    }
+
+    .photo {
+        width: 145px;
+        height: 145px;
+    }
+
+    /* footer */
+}
