@@ -1,1 +1,399 @@
+body,
+header,
+main,
+footer {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* navigation-bar */
+
+header {
+    background-color: #08878b;
+    padding: 10px 0;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+}
+
+.header {
+    grid-area: header;
+}
+
+.navigation-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navigation-bar li {
+    margin-right: 20px;
+}
+
+.navigation-bar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+    display: inline-block;
+}
+
+.navigation-bar a:hover {
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.navigation-bar {
+    display: grid;
+    justify-content: right;
+}
+
+/* title bar container */
+
+.title-bar-container {
+    grid-area: title-bar-container;
+    display: grid;
+    justify-items: center;
+}
+
+/* bullet points */
+
+.bullet-points {
+    grid-area: bullet-points;
+    display: grid;
+    justify-items: center;
+}
+
+.services {
+    display: grid;
+    grid-template-rows: 90px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* album containers */
+/* deck album */
+
+.information-container {
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin: 50px 0;
+    height: auto; /* Changed from fixed height to auto */
+    flex-direction: row; /* Default direction */
+}
+  
+.information-container-image {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+  
+.information-container-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+  
+.parent {
+    height: 100%;
+    width: 100%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+  
+/* inside the album, album */
+  
+.album {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    row-gap: 20px;
+}
+  
+.photo {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 150px;  /* Fixed width */
+    height: 150px; /* Fixed height */
+    box-sizing: border-box;
+    position: relative;  /* Added */
+}
+  
+.photo img {
+    position: absolute;  /* Change to absolute */
+    top: 0;  /* Add this line */
+    left: 0;  /* Add this line */
+    width: 100%;  /* Change to 100% */
+    height: 100%;  /* Change to 100% */
+    object-fit: cover;  /* Add this line */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: repeat(11, auto);
+    align-items: center;
+}
+
+/* decks */
+
+.decks {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* electrical */
+
+.electrical {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* fences */
+
+.fences {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* floors */ 
+
+.floors {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* framing */
+
+.framing {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* plumming */
+
+.plumming {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* remodels & renovations */
+
+.remodels {
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* siding */
+
+.siding {
+    grid-row-start: 8;
+    grid-row-end: 9;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* tiling */
+
+.tiling {
+    grid-row-start: 9;
+    grid-row-end: 10;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* walls */
+
+.walls {
+    grid-row-start: 10;
+    grid-row-end: 11;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* windows */
+
+.windows {
+    grid-row-start: 11;
+    grid-row-end: 12;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.button {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+/* footer */
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section .social-icons {
+    display: flex;
+}
+  
+.footer-section .social-icons img {
+    padding-right: 15px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+
+    .grid {
+        grid-template-columns: 1fr 6fr 1fr;
+        grid-template-rows: repeat(11, auto);
+    }
+
+    .information-container-image img {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .photo {
+        width: 80px;  /* Fixed width */
+        height: 80px; /* Fixed height */
+    }
+
+    /* decks */
+
+    .decks {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0 10px;
+    }
+
+    /* electrical */
+
+    .electrical {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0 10px;
+    }
+
+    /* fences */
+
+    .fences {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0 10px;
+    }
+
+    /* floors */
+
+    .floors {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0 10px;
+    }
+
+    /* framing */
+
+    .framing {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0 10px;
+    }
+
+    /* plumming */
+
+    .plumming {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0 10px;
+    }
+
+    /* remodel & renovations */
+
+    .remodels {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0 10px;
+    }
+
+    /* siding */
+
+    .siding {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0 10px;
+    }
+
+    /* tiling */
+
+    .tiling {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0 10px;
+    }
+
+    /* walls */
+
+    .walls {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0 10px;
+    }
+
+    /* windows */
+
+    .windows {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0 10px;
+    }   
+
+}
