@@ -7,27 +7,45 @@
         <link rel="stylesheet" href="./css/index.css">
     </head>
     <body>
-        
-        <!--Navigation Bar-->
+        <div class="grid">
 
-        <header>
-            <nav class="navigation-bar">
-                <ul>
-                    <!--<li><a href="./index.html">Home</a></li>-->
-                    <li><a href="./index.html">About Us</a></li>
-                    <li><a href="./Navigation-Bar-Links/services.html">Services</a></li>
-                    <li><a href="./Navigation-Bar-Links/contact.html">Contact</a></li>
-                    <li><a href="./Navigation-Bar-Links/gallery.html">Project Portfolio</a></li>
-                    <!--<li><a href="">Estimate Calculator</a></li>-->
-                </ul>
-            </nav>
-        </header>
+            <!--hamburger for smaller screens-->
 
-        <!--Banner-->
+            <div class="header">
+                <header>
+                    <!--<div class="hamheader">
+                        <button class="hamburger">&#9776;</button>
+                        <nav class="hamburger-navigation bar">
+                            <ul>
+                                <li><a href="./index.html">About Us</a></li>
+                                <li><a href="./Navigation-Bar-Links/services.html">Services</a></li>
+                                <li><a href="./Navigation-Bar-Links/contact.html">Contact</a></li>
+                                <li><a href="./Navigation-Bar-Links/gallery.html">Project Portfolio</a></li>
+                            </ul>
+                        </nav>
+                    </div>-->
 
-        <main>
-            <div class="banner">
-                <h1>Lionheart Contracting Group</h1>
+            <!-- regular navigation for larger screens-->
+
+                    <nav class="navigation-bar">
+                        <ul>
+                        <!--<li><a href="./index.html">Home</a></li>-->
+                            <li><a href="./index.html">About Us</a></li>
+                            <li><a href="./Navigation-Bar-Links/services.html">Services</a></li>
+                            <li><a href="./Navigation-Bar-Links/contact.html">Contact</a></li>
+                            <li><a href="./Navigation-Bar-Links/gallery.html">Project Portfolio</a></li>
+                        <!--<li><a href="">Estimate Calculator</a></li>-->
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+
+            <!--Banner-->
+
+            <div  class="banner">
+                <div class="banner-background">
+                    <h1>Lionheart Contracting Group</h1>
+                </div>
             </div>
 
             <div class="contact-banner">
@@ -37,7 +55,7 @@
             <!--What we offer-->
 
             <div class="daily-plan">
-                <div>
+                <div class="section-title">
                     <h2>What We Do on a Daily Basis</h2>
                 </div>
                 <div class="daily-intro">
@@ -58,22 +76,22 @@
                 </div>
             </div>
 
-                        <!--who we are-->
+            <!--who we are-->
 
-            <div>
-                <div>
+            <div class="who-we-are">
+                <div class="section-title">
                     <h2>Who We Are</h2>
-                    <div class="who-we-are-banner-container">
-                        <div class="who-we-are-banner">
-                            <div class="who-we-are-banner-photo-container">
-                                <div class="who-we-are-banner-photo">
-                                    <p>100% employee and veteran owned</p>
-                                </div>
+                </div>
+                <div class="who-we-are-banner-container">
+                    <div class="who-we-are-banner">
+                        <div class="who-we-are-banner-photo-container">
+                            <div class="who-we-are-banner-photo">
+                                <p>100% employee and veteran owned</p>
                             </div>
-                            <div class="who-we-are-banner-paragraph-container">
-                                <div class="who-we-are-banner-paragraph">
-                                    <p>At <strong>Lionheart Contracting Group</strong> we take immense pride in being a 100% employee and veteran-owned business. Our team embodies the core values of integrity, dedication, and excellence. We understand the value of teamwork and meticulous planning, virtues that enable us to deliver services that meet and exceed your expectations. From home renovations to specialized contracting services, we are equipped to handle projects of any scale with the utmost professionalism. Choosing Lionheart Contracting Group means choosing a partner dedicated to exceptional service, crafted through years of experience and refined through the principles of duty, honor, and excellence.</p>
-                                </div>
+                        </div>
+                        <div class="who-we-are-banner-paragraph-container">
+                            <div class="who-we-are-banner-paragraph">
+                                <p>At <strong>Lionheart Contracting Group</strong> we take immense pride in being a 100% employee and veteran-owned business. Our team embodies the core values of integrity, dedication, and excellence. We understand the value of teamwork and meticulous planning, virtues that enable us to deliver services that meet and exceed your expectations. From home renovations to specialized contracting services, we are equipped to handle projects of any scale with the utmost professionalism. Choosing Lionheart Contracting Group means choosing a partner dedicated to exceptional service, crafted through years of experience and refined through the principles of duty, honor, and excellence.</p>
                             </div>
                         </div>
                     </div>
@@ -82,13 +100,13 @@
 
 
             <!--Meet our team-->
-    
-            <div id="greeting">
-                <h2>Meet our team</h2>
-            </div>
-            <div class="roster">
-                <div class="employee">
-                    <div>
+            
+            <div class="meet-our-team">
+                <div class="section-title">
+                    <h2>Meet our team</h2>
+                </div>
+                <div class="roster">
+                    <div class="employee">
                         <div class="employee-name">
                             <h4>Scott</h4>
                         </div>
@@ -104,13 +122,11 @@
                             </div>
                         </div>
                         <div class="individual-quote">
-                            <p>quote</p>
+                            <p>" quote "</p>
                         </div>
                     </div>
-                </div>
-        
-                <div class="employee">
-                    <div>
+            
+                    <div class="employee">
                         <div class="employee-name">
                             <h4>Leo</h4>
                         </div>
@@ -125,13 +141,11 @@
                             </div>
                         </div>
                         <div class="individual-quote">
-                            <p>quote</p>
+                            <p>" quote "</p>
                         </div>
                     </div>
-                </div>
-        
-                <div class="employee">
-                    <div>
+            
+                    <div class="employee3">
                         <div class="employee-name">
                             <h4>Zeke</h4>
                         </div>
@@ -146,7 +160,7 @@
                             </div>
                         </div>
                         <div class="individual-quote">
-                            <p>quote</p>
+                            <p>" quote "</p>
                         </div>
                     </div>
                 </div>
@@ -154,8 +168,11 @@
     
             <!--Picture section-->
     
-            <div id="work">
+            <div class="section-title">
                 <h2>What we've done</h2>
+            </div>
+
+            <div class="work">
                 <div class="album">
                     <div class="photo">
                         <img src="./images/project-portfolios/cabinets/cabinets.jpeg" alt="cabinets">
@@ -190,14 +207,10 @@
 
                     <!-- Add more photos here -->
                 </div>
-                <div class="gallery-link">
-                    <a href="./Navigation-Bar-Links/gallery.html">Project Portfolio</a>
-                </div>
             </div>
-    
-
-            
-        </main>
+            <div class="gallery-link">
+                <a href="./Navigation-Bar-Links/gallery.html">Project Portfolio</a>
+            </div>
 
         <footer>
             <div class="footer-container">
@@ -226,6 +239,9 @@
                 &copy; 2023 Lionheart Contracting Group. All rights reserved.
             </div>
         </footer>
+        </div>
+
+        <script src="./Scripts/index.js"></script>
 
     </body>
 </html>
