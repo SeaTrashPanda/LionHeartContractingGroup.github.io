@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Decks | Project Portfolio</title>
-        <link rel="stylesheet" href="../css/project-portfolio-albums/project-portfolio-decks.css">
+        <link rel="stylesheet" href="../CSS/project-portfolio-links.css">
     </head>
     <body>
         
@@ -24,26 +24,29 @@
         </header>
                 <!--albums-->
         <main>
-            <h1>Deck Photos</h1>
-
-            <div class="album">
-                <div class="photo">
-                    <img src="../images/project-portfolios/decks/sunset-deck.jpg" alt="sunset deck" onclick="openModal(this.src, '')">
+            <div class="grid">
+                <div class="grid-title">
+                    <h1>Deck Photos</h1>
                 </div>
-        
-                <div class="photo">
-                    <img src="../images/project-portfolios/decks/backporch.jpeg" alt="back deck" onclick="openModal(this.src, '')">
+                <div class="album">
+                    <div class="photo">
+                        <img src="../images/project-portfolios/decks/sunset-deck.jpg" alt="sunset deck" onclick="openModal(this.src, '')">
+                    </div>
+            
+                    <div class="photo">
+                        <img src="../images/project-portfolios/decks/backporch.jpeg" alt="back deck" onclick="openModal(this.src, '')">
+                    </div>
+            
+                    <div class="photo">
+                        <img src="../images/project-portfolios/decks/deck1.jpg" alt="rear view of a deck" onclick="openModal(this.src, '')">
+                    </div>
+    
+                    <div class="photo">
+                        <img src="../images/project-portfolios/decks/deck2.jpg" alt="front view of a deck" onclick="openModal(this.src, '')">
+                    </div>
+            
+                    <!-- Add more photos here -->
                 </div>
-        
-                <div class="photo">
-                    <img src="../images/project-portfolios/decks/deck1.jpg" alt="rear view of a deck" onclick="openModal(this.src, '')">
-                </div>
-
-                <div class="photo">
-                    <img src="../images/project-portfolios/decks/deck2.jpg" alt="front view of a deck" onclick="openModal(this.src, '')">
-                </div>
-        
-                <!-- Add more photos here -->
             </div>
 
             <div id="myModal" class="modal" onclick="closeModal()">
