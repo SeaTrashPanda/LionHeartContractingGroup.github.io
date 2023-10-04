@@ -351,7 +351,7 @@ footer {
     .navigation-bar li {
         margin-right: 10px;
     }
-    
+
     /* banner */
 
     /* contact banner */
@@ -403,8 +403,8 @@ footer {
 
     .album {
         grid-template-rows: auto;
-        grid-template-columns: repeat(3, 139px);
-        row-gap: 5px;
+        grid-template-columns: repeat(3, 135px);
+        gap: 5px;
     }
 
     .photo {
