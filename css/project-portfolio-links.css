@@ -136,6 +136,7 @@ footer {
     color: #fff;
     bottom: 0;
     width: 100%;
+    margin-top: 35px;
 }
 
 .footer-container {
@@ -199,6 +200,27 @@ footer {
         left: 50%;
         height: auto;
         width: 80%;
+    }
+
+    .footer-section p {
+        font-size: 12px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-section1 {
+        display: none;
+    }
+
+    .footer-section2 {
+        margin-left: 15px;
     }
 
 }
