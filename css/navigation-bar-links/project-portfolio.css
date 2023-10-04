@@ -428,4 +428,25 @@ footer {
         margin: 0 10px;
     }   
 
+    .footer-section p {
+        font-size: 12px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-section1 {
+        display: none;
+    }
+
+    .footer-section2 {
+        margin-left: 15px;
+    }
+
 }
