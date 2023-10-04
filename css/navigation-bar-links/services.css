@@ -386,7 +386,7 @@ footer {
     .remodels {
         grid-column-start: 1;
         grid-column-end: 4;
-    }
+    } 
 
     .siding {
         grid-column-start: 1;
