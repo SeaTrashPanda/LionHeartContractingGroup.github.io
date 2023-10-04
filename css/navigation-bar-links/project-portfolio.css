@@ -299,13 +299,14 @@ footer {
 
     .services {
         display: grid;
-        grid-template-rows: 90px 90px;
+        grid-template-rows: 80px 80px;
         grid-template-columns: repeat(2, 1fr);
+        row-gap: 0;
     }
 
     .grid {
         grid-template-columns: 1fr 6fr 1fr;
-        grid-template-rows: repeat(11, auto);
+        grid-template-rows: repeat(11, 250px);
     }
 
     .information-container-image {
