@@ -375,8 +375,8 @@ footer {
     /* picture section */
 
     .album {
-        grid-template-rows: 150px 150px;
-        grid-template-columns: repeat(5, 139px);
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3, 139px);
         row-gap: 10px;
     }
 
