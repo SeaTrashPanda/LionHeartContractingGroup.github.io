@@ -293,14 +293,28 @@ footer {
 
 @media (max-width: 768px) {
 
+    .navigation-bar li {
+        margin-right: 10px;
+    }
+
+    .services {
+        display: grid;
+        grid-template-rows: 90px 90px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .grid {
         grid-template-columns: 1fr 6fr 1fr;
         grid-template-rows: repeat(11, auto);
     }
 
-    .information-container-image img {
-        height: 100%;
-        width: 100%;
+    .information-container-image {
+        display: none;
+    }
+
+    .album {
+        margin-right: 15px;
+        margin-bottom: 10px;
     }
     
     .photo {
