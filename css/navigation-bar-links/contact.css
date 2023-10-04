@@ -198,6 +198,10 @@ footer {
         grid-template-rows: 1fr 1fr 1fr;
     }
 
+    .logo-name-container {
+        margin-left: 15px;
+    }
+
     .logo-name-container img {
         width: 105px;
         height: 105px;
@@ -205,30 +209,29 @@ footer {
         margin-bottom: 12px;
     }
 
-    .logo-image-container img {
-        height: 140px;
-        width: 140px;
+    .logo-image-container {
+        display: none;
     }
 
     /* card container 1 */
 
     .card-container1 {
-        grid-column-start: 5;
-        grid-column-end: 13;
+        grid-column-start: 6;
+        grid-column-end: 12;
     }
 
     /* card container 2 */
 
     .card-container2 {
-        grid-column-start: 5;
-        grid-column-end: 13;
+        grid-column-start: 6;
+        grid-column-end: 12;
     }
 
     /* card container 3 */
 
     .card-container3 {
-        grid-column-start: 5;
-        grid-column-end: 13;
+        grid-column-start: 6;
+        grid-column-end: 12;
     }
 
 }
