@@ -16,9 +16,14 @@ html {
     font-family: Helvetica;
 }
 
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 h2 {
-    font-family: 'Times New Roman';
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 2.5rem;
+    color: black;
 }
 
 p {
@@ -94,7 +99,7 @@ header {
 
 .services {
     display: grid;
-    grid-template-rows: 90px;
+    grid-template-rows: auto;
     grid-template-columns: repeat(4, 1fr);
 }
 
@@ -313,6 +318,10 @@ footer {
     display: flex;
 }
 
+.footer-section2 p {
+    font-size: 1em;
+}
+
 .social-icons img {
     width: 24px;
     height: 24px;
@@ -338,6 +347,7 @@ footer {
 
     .navigation-bar li {
         margin-right: 10px;
+        font-size: 15px;
     }
 
     .services {
