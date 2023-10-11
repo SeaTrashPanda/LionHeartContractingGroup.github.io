@@ -6,6 +6,19 @@ footer {
     padding: 0;
 }
 
+html {
+    font-family: Helvetica;
+}
+
+h2 {
+    font-family: 'Times New Roman';
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
 /* navigation bar */
 
 header {
@@ -255,7 +268,7 @@ footer {
         grid-column-end: 12;
     }
 
-    .footer-section p {
+    .footer-container p {
         font-size: 12px;
     }
 
