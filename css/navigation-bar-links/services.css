@@ -18,13 +18,14 @@ html {
     font-family: Helvetica;
 }
 
-h2 {
-    font-family: 'Times New Roman';
-    font-size: 2.5rem;
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-p {
-    font-size: 1.5rem;
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5rem;
+    color: black;
 }
 
 a {
@@ -88,11 +89,12 @@ header {
     grid-area: bullet-points;
     display: grid;
     justify-items: center;
+    height: 100%;
 }
 
 .services {
     display: grid;
-    grid-template-rows: 90px;
+    grid-template-rows: auto;
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 50px;
 }
@@ -159,6 +161,8 @@ header {
 .information-container-text-paragraph {
     margin-left: 20px;
     width: 90%;
+    line-height: 1.5;
+    font-size: 1.375rem;
 }
 
 .button-links {
@@ -349,6 +353,10 @@ footer {
     color: white;
 }
 
+.footer-section2 p {
+    font-size: 1em;
+}
+
 .social-icons {
     display: flex;
 }
@@ -378,6 +386,7 @@ footer {
 
     .navigation-bar li {
         margin-right: 10px;
+        font-size: 15px;
     }
 
     .services {
