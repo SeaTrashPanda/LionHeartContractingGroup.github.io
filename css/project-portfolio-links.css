@@ -82,16 +82,16 @@ header {
 
 .album {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, minmax(350px, 1fr));
     grid-auto-rows: auto;
     gap: 15px;
-    justify-items: center;
+    justify-content: space-around;
 }
 
 .photo {
     border: 1px solid #ccc;
-    height: 450px;
-    width: 450px;
+    width: 100%;
+    padding-top: 100%;
     box-sizing: border-box;
     position: relative;
 }
@@ -99,6 +99,8 @@ header {
 .photo img {
     position: absolute;
     height: 100%;
+    top: 0;
+    left: 0;
     width: 100%;
     object-fit: cover;
 }
@@ -171,6 +173,10 @@ footer {
     display: flex;
 }
 
+.footer-section2 p {
+    font-size: 1em;
+}
+
 .social-icons img {
     width: 24px;
     height: 24px;
@@ -196,6 +202,7 @@ footer {
 
     .navigation-bar li {
         margin-right: 10px;
+        font-size: 15px;
     }
     
     .album {
