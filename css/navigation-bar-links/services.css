@@ -14,6 +14,22 @@ body {
 
 /* fonts and text */
 
+html {
+    font-family: Helvetica;
+}
+
+h2 {
+    font-family: 'Times New Roman';
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
 
 /* navigation-bar */
 
@@ -78,6 +94,17 @@ header {
     display: grid;
     grid-template-rows: 90px;
     grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 50px;
+}
+
+.services-container li {
+    line-height: 1.5;
+    list-style: none;
+    font-size: 1.25rem;
+}
+
+.services-container li a {
+    color: #000000a8;
 }
 
 /* service descriptions */
@@ -97,7 +124,7 @@ header {
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 8px;
-    margin: 50px;
+    margin: 50px 0;
     height: auto; /* Changed from fixed height to auto */
     display: flex;
     flex-direction: row; /* Default direction */
@@ -355,7 +382,7 @@ footer {
 
     .services {
         display: grid;
-        grid-template-rows: 80px 80px;
+        grid-template-rows: auto;
         grid-template-columns: repeat(2, 1fr);
         row-gap: 0;
     }
@@ -432,7 +459,7 @@ footer {
         grid-column-end: 4;
     }
 
-    .footer-section p {
+    .footer-container p {
         font-size: 12px;
     }
 
