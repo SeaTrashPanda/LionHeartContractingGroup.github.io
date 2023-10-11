@@ -254,7 +254,7 @@ header {
 
 /* plumming */
 
-.plumming {
+.plumbing {
     display: grid;
     grid-row-start: 6;
     grid-row-end: 7;
@@ -429,7 +429,7 @@ footer {
         grid-column-end: 4;
     }
 
-    .plumming {
+    .plumbing {
         grid-column-start: 1;
         grid-column-end: 4;
     }
