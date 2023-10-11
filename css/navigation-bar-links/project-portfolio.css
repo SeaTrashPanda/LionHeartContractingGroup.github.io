@@ -12,6 +12,23 @@ body {
     min-height: 100vh;
 }
 
+html {
+    font-family: Helvetica;
+}
+
+h2 {
+    font-family: 'Times New Roman';
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
 main {
     flex: 1 0 auto;
 }
@@ -79,6 +96,16 @@ header {
     display: grid;
     grid-template-rows: 90px;
     grid-template-columns: repeat(4, 1fr);
+}
+
+.services-container li {
+    line-height: 1.5;
+    list-style: none;
+    font-size: 1.25rem;
+}
+
+.services-container li a {
+    color: #000000a8;
 }
 
 /* album containers */
@@ -315,9 +342,13 @@ footer {
 
     .services {
         display: grid;
-        grid-template-rows: 80px 80px;
+        grid-template-rows: auto;
         grid-template-columns: repeat(2, 1fr);
         row-gap: 0;
+    }
+
+    .services-container {
+        padding: 5px;
     }
 
     .grid {
@@ -428,7 +459,7 @@ footer {
         margin: 0 10px;
     }   
 
-    .footer-section p {
+    .footer-container p {
         font-size: 12px;
     }
 
