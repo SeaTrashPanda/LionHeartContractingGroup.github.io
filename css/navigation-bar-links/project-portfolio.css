@@ -41,11 +41,18 @@ main {
 /* navigation-bar */
 
 header {
-    background-color: #08878b;
-    padding: 10px 0;
-    z-index: 100;
     position: sticky;
     top: 0;
+    z-index: 100;
+    background-color: rgb(33, 134, 126);
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-bar-logo img {
+    height: 70px;
+    width: 70px;
+    margin-left: 15px;
 }
 
 .header {
@@ -97,20 +104,21 @@ header {
     justify-items: center;
 }
 
-.services {
+.services-container {
     display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.services-container li {
+    grid-template-columns: repeat(5, 1fr);
     line-height: 1.5;
-    list-style: none;
-    font-size: 1.25rem;
 }
 
-.services-container li a {
+.services-container a {
+    text-decoration: none;
     color: #000000a8;
+    font-size: 1.5rem;
+    margin: 15px 10px;
+}
+
+.services-container a:hover {
+    text-decoration: underline;
 }
 
 /* album containers */
@@ -124,19 +132,13 @@ header {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 8px;
     margin: 50px 0;
-    height: auto; /* Changed from fixed height to auto */
-    flex-direction: row; /* Default direction */
-}
-  
-.information-container-image {
-    height: 100%;
-    width: 100%;
-    position: relative;
+    height: auto;
+    flex-direction: row;
 }
   
 .information-container-image img {
-    height: 100%;
-    width: 100%;
+    height: 650px;
+    width: 650px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -144,7 +146,8 @@ header {
 .parent {
     height: 100%;
     width: 100%;
-    margin-left: 20px;
+    margin: 20px;
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
 }
@@ -155,40 +158,61 @@ header {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: auto;
-    row-gap: 20px;
+    gap: 15px;
 }
   
 .photo {
     border: 1px solid #ccc;
-    padding: 10px;
     text-align: center;
-    width: 150px;  /* Fixed width */
-    height: 150px; /* Fixed height */
+    width: 95%;
+    height: 240px;
     box-sizing: border-box;
-    position: relative;  /* Added */
+    position: relative;
+    border-radius: 5px;
 }
   
 .photo img {
-    position: absolute;  /* Change to absolute */
-    top: 0;  /* Add this line */
-    left: 0;  /* Add this line */
-    width: 100%;  /* Change to 100% */
-    height: 100%;  /* Change to 100% */
-    object-fit: cover;  /* Add this line */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 .grid {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
-    grid-template-rows: repeat(11, auto);
+    grid-template-rows: auto;
+    row-gap: 20px;
     align-items: center;
+}
+
+/* bathrooms */
+
+.bathrooms {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* cabinets */
+
+.cabinets {
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 /* decks */
 
 .decks {
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* doors */
+
+.doors {
     grid-column-start: 2;
     grid-column-end: 3;
 }
@@ -196,8 +220,6 @@ header {
 /* electrical */
 
 .electrical {
-    grid-row-start: 2;
-    grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
 }
@@ -205,8 +227,6 @@ header {
 /* fences */
 
 .fences {
-    grid-row-start: 3;
-    grid-row-end: 4;
     grid-column-start: 2;
     grid-column-end: 3;
 }
@@ -214,8 +234,6 @@ header {
 /* floors */ 
 
 .floors {
-    grid-row-start: 4;
-    grid-row-end: 5;
     grid-column-start: 2;
     grid-column-end: 3;
 }
@@ -223,26 +241,27 @@ header {
 /* framing */
 
 .framing {
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.patios {
     grid-column-start: 2;
     grid-column-end: 3;
 }
 
 /* plumming */
 
-.plumbing {
+/* .plumbing {
     grid-row-start: 6;
     grid-row-end: 7;
     grid-column-start: 2;
     grid-column-end: 3;
-}
+} */
 
 /* remodels & renovations */
 
 .remodels {
-    grid-row-start: 7;
-    grid-row-end: 8;
     grid-column-start: 2;
     grid-column-end: 3;
 }
@@ -250,8 +269,6 @@ header {
 /* siding */
 
 .siding {
-    grid-row-start: 8;
-    grid-row-end: 9;
     grid-column-start: 2;
     grid-column-end: 3;
 }
@@ -259,29 +276,27 @@ header {
 /* tiling */
 
 .tiling {
-    grid-row-start: 9;
-    grid-row-end: 10;
     grid-column-start: 2;
     grid-column-end: 3;
 }
 
 /* walls */
 
-.walls {
+/* .walls {
     grid-row-start: 10;
     grid-row-end: 11;
     grid-column-start: 2;
     grid-column-end: 3;
-}
+} */
 
 /* windows */
 
-.windows {
+/* .windows {
     grid-row-start: 11;
     grid-row-end: 12;
     grid-column-start: 2;
     grid-column-end: 3;
-}
+} */
 
 .button {
     width: 100%;
@@ -345,25 +360,40 @@ footer {
 
 @media (max-width: 768px) {
 
+    .navigation-bar-logo img {
+        display: none;
+    }
+
+    .navigation-bar {
+        padding: 10px;
+    }
+
     .navigation-bar li {
         margin-right: 10px;
         font-size: 15px;
     }
 
-    .services {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 0;
+    .services-container {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
     }
 
     .services-container {
         padding: 5px;
     }
 
+    .information-container-image {
+        display: none;
+    }
+
     .grid {
         grid-template-columns: 1fr 6fr 1fr;
-        grid-template-rows: repeat(11, auto);
+        gap: 7px;
+    }
+
+    .parent {
+        margin: 5px;
     }
 
     .information-container {
@@ -371,19 +401,49 @@ footer {
 
     }
 
+    .information-container-image img {
+        height: 100%;
+        width: 100%;
+    }
+
     .album {
-        margin-right: 15px;
-        margin-bottom: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+
     }
     
     .photo {
-        width: 80px;  /* Fixed width */
-        height: 80px; /* Fixed height */
+        width: 95%;
+        height: 135px;
+    }
+
+    /* bathrooms */
+
+    .bathrooms {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0 10px;
+    }
+
+    /* cabinets */
+
+    .cabinets {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0 10px;
     }
 
     /* decks */
 
     .decks {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0 10px;
+    }
+
+    /* doors */
+
+    .doors {
         grid-column-start: 1;
         grid-column-end: 4;
         margin: 0 10px;
@@ -416,6 +476,14 @@ footer {
     /* framing */
 
     .framing {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 0 10px;
+    }
+
+    /* patios */
+
+    .patios {
         grid-column-start: 1;
         grid-column-end: 4;
         margin: 0 10px;
