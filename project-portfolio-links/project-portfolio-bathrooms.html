@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bathrooms | Project Portfolio</title>
+        <link rel="stylesheet" href="../css/project-portfolio-links.css">
+    </head>
+    <body>
+        
+        <!--Navigation Bar-->
+
+        <header>
+            <div class="navigation-bar-logo">
+                <img src="./Images/social media icons/lionheart-logo.jpg" alt="Lionheart Contracting Group Logo">
+            </div>
+            <nav class="navigation-bar">
+                <ul>
+                    <!--<li><a href="../index.html">Home</a></li>-->
+                    <li><a href="../index.html">About Us</a></li>
+                    <li><a href="../Navigation-Bar-Links/services.html">Services</a></li>
+                    <li><a href="../Navigation-Bar-Links/contact.html">Contact</a></li>
+                    <li><a href="../Navigation-Bar-Links/gallery.html">Project Portfolio</a></li>
+                    <!--<li><a href="">Estimate Calculator</a></li>-->
+                </ul>
+            </nav>
+        </header>
+                <!--albums-->
+        <main>
+            <div class="grid">
+                <div class="grid-title">
+                    <h1>Bathroom Photos</h1>
+                </div>
+                <div class="album">
+                    <div class="photo">
+                        <img src="../images/project-portfolios/Bathrooms/bathroom0.jpeg" alt="bathroom" onclick="openModal(this.src, '')">
+                    </div>
+                    <div class="photo">
+                        <img src="../images/project-portfolios/Bathrooms/bathroom1.jpeg" alt="bathroom" onclick="openModal(this.src, '')">
+                    </div>
+                    <div class="photo">
+                        <img src="../images/project-portfolios/Bathrooms/bathroom2.jpeg" alt="bathroom" onclick="openModal(this.src, '')">
+                    </div>
+            
+                    <!-- Add more photos here -->
+                </div>
+            </div>
+
+            <div id="myModal" class="modal" onclick="closeModal()">
+                <div class="modal-content-wrapper" onclick="event.stopPropagation()">
+                  <span class="close" onclick="closeModal()">&times;</span>
+                  <img class="modal-content" id="modalImage">
+                  <div id="modalCaption"></div>
+                </div>
+              </div>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section1">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../Navigation-Bar-Links/services.html">Services</a></li>
+                        <li><a href="../Navigation-Bar-Links/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section2">
+                    <h5>Contact Us</h5>
+                    <p>Email: <a href="mailto:lionheartcontractinggroup@gmail.com">lionheartcontractinggroup@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+17576472842">+1 (757) 647-2842</a></p>
+                </div>
+                <div class="footer-section3">
+                    <h5>Follow Us</h5>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/profile.php?id=61551120681245" target="_blank"><img src="../images/social media icons/facebook.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="../images/social media icons/instagram.png" alt="Instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2023 Lionheart Contracting Group. All rights reserved.
+            </div>
+        </footer>
+
+        <script src="../scripts/index.js"></script>
+
+    </body>
+</html>
