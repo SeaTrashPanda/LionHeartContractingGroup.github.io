@@ -23,10 +23,17 @@ p {
 
 header {
     position: sticky;
-    background-color: #08878b;
-    padding: 10px 0;
     top: 0;
     z-index: 100;
+    background-color: rgb(33, 134, 126);
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-bar-logo img {
+    height: 70px;
+    width: 70px;
+    margin-left: 15px;
 }
 
 .header {
@@ -225,6 +232,14 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+    .navigation-bar-logo img {
+        display: none;
+    }
+
+    .navigation-bar {
+        padding: 10px;
+    }
 
     .navigation-bar li {
         margin-right: 10px;
