@@ -1,7 +1,7 @@
 body,
 header,
 main,
-footer, h4 {
+footer {
     margin: 0;
     padding: 0;
 }
@@ -48,14 +48,17 @@ p {
 
 header {
     position: sticky;
-    background-color: #08878b;
-    padding: 10px 0;
     top: 0;
     z-index: 100;
+    background-color: rgb(33, 134, 126);
+    display: flex;
+    justify-content: space-between;
 }
 
-.header {
-    grid-area: header;
+.navigation-bar-logo img {
+    height: 70px;
+    width: 70px;
+    margin-left: 15px;
 }
 
 .navigation-bar ul {
@@ -84,7 +87,7 @@ header {
 
 .navigation-bar {
     display: grid;
-    justify-content: right;
+    align-items: center;
 }
 
 /* fonts and text */
@@ -95,10 +98,6 @@ header {
 }
 
 /* banner */
-
-.banner {
-    grid-area: banner;
-}
 
 .banner-background {
     position: relative;
@@ -182,6 +181,9 @@ header {
 
 .who-we-are-banner-paragraph {
     margin-right: 25px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 5px;
 }
 
 .who-we-are-banner-paragraph-container p {
@@ -471,6 +473,14 @@ footer {
     .navigation-bar li {
         margin-right: 10px;
         font-size: 15px;
+    }
+
+    .navigation-bar-logo img {
+        display: none;
+    }
+
+    .navigation-bar {
+        padding: 10px;
     }
 
     /* banner */
