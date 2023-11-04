@@ -85,7 +85,7 @@ header {
 
 .navigation-bar {
     display: grid;
-    justify-content: right;
+    align-items: center;
 }
 
 /* title bar container */
