@@ -40,6 +40,11 @@ header {
     grid-area: header;
 }
 
+.navigation-bar {
+    display: grid;
+    align-items: center;
+}
+
 .navigation-bar ul {
     list-style: none;
     padding: 0;
@@ -62,11 +67,6 @@ header {
 .navigation-bar a:hover {
     background-color: lightgray;
     border-radius: 5px;
-}
-
-.navigation-bar {
-    display: grid;
-    justify-content: right;
 }
 
 /* contact cards */
